@@ -23,7 +23,7 @@ jobs:
         run: |
           pip install poetry==1.0.0a4  # FIXME: need pre-release for export
           poetry build
-      - name: Installing package
+      - name: Installing fresh package
         run: pip install dist/stenotype*.whl
       - name: Building documentation
         run: |
