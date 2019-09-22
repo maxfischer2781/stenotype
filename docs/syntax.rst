@@ -55,7 +55,7 @@ similar. Given the examples, they would change in the following ways:
 ``typing``-Types Equivalent Mappings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sepcial Forms
+Special Forms
 '''''''''''''
 
 Special forms use reserved symbols to represent special types.
@@ -251,8 +251,8 @@ when using ``stenotype``.
   bar: typing.Callable[[], typing.Iterable[bool]]
 
   # stenotype
-  foo: "*int"
-  bar: "() -> *bool"
+  foo: "iter int"
+  bar: "() -> iter bool"
 
 
 
@@ -345,8 +345,8 @@ Keywords correspond to how the type is used to get a value of a specifi type.
   bar: typing.AsyncIterable[R]
 
   # stenotype
-  foo: "(A, B) -> await *R"
-  bar: "await *R"
+  foo: "(A, B) -> await iter R"
+  bar: "await iter R"
 
 **Context managing functions**
 
